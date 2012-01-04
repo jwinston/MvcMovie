@@ -46,6 +46,7 @@ namespace Web.Infrastructure
             catch (Exception x)
             {
                 TempData["Error"] = "There was a problem editing this record";
+                ModelState.AddModelError(string.Empty, x.Message); 
                 return View(model);
             }
         }
@@ -82,6 +83,7 @@ namespace Web.Infrastructure
             catch (Exception x)
             {
                 TempData["Error"] = "There was a problem adding this record";
+                ModelState.AddModelError(string.Empty, x.Message); 
                 return View();
             }
         }
