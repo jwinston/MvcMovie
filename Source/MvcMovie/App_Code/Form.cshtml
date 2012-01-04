@@ -13,6 +13,15 @@
         <input type="text" name="@name" id="@name" value="@val" />
     </p>
 }
+
+@helper Label(string name, object value = null) {
+    var val = value ?? "";
+    <p>
+        <label class="label">@name:</label>
+        <label class="value">@val</label> 
+    </p>
+}
+
 @helper TextBoxRequired(string name, object value = null, string requiredMessage = "Required") {
     var val = value ?? "";
     <p>

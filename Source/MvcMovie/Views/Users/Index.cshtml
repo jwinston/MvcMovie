@@ -4,3 +4,38 @@
 }
 
 <h2>Index</h2>
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>Email</th> 
+        <th>LastLogin</th>
+        <th>CreatedAt</th>
+        <th>UpdatedAt</th>
+        <th>IsBanned</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@item.Email</td>  
+        <td>@item.LastLogin</td> 
+        <td>@item.CreatedAt</td> 
+        <td>@item.UpdatedAt</td>  
+        <td>@item.IsBanned</td>  
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) 
+        </td>
+    </tr>
+}
+
+</table>
+
+
+
+ 
