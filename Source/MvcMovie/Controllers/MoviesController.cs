@@ -1,13 +1,6 @@
 ﻿//#define OverloadDelete
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+
 using MvcMovie.Models;
-using Massive; 
 using Web.Infrastructure;
 
 namespace MvcMovie.Controllers
@@ -15,9 +8,8 @@ namespace MvcMovie.Controllers
     public class MoviesController : CruddyController
     {
 
-        //public MoviesController(ITokenHandler tokenStore)
-        //    : base(tokenStore)
-        public MoviesController( ):base( )
+        public MoviesController(ITokenHandler tokenStore)
+            : base(tokenStore) 
         {
             _table = new Movies();
             ViewBag.Table = _table;

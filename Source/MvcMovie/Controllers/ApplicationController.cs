@@ -7,7 +7,8 @@ using System.Web.Script.Serialization;
 using System.IO;
 using System.Dynamic;
 using Web.Infrastructure.Logging;
-using Web.Infrastructure; 
+using Web.Infrastructure;
+using MvcMovie.Models; 
 
 namespace  Web.Controllers
 {
@@ -38,7 +39,7 @@ namespace  Web.Controllers
             get {
                 var token = TokenStore.GetToken();
                 if (!String.IsNullOrEmpty(token)) {
-                    _currentUser = Model.Users.FindByToken(token);
+                    _currentUser = Users.FindByToken(token);
 
                     if (_currentUser == null) {
                         //force the current user to be logged out...
@@ -73,11 +74,13 @@ namespace  Web.Controllers
             }
             return bodyText;
         }
-        //public dynamic SqueezeJson() {
+        //public dynamic SqueezeJson()
+        //{
         //    var serializer = new JavaScriptSerializer();
         //    serializer.RegisterConverters(new JavaScriptConverter[] { new ExpandoObjectConverter() });
         //    var bodyText = "";
-        //    using (var stream = Request.InputStream) {
+        //    using (var stream = Request.InputStream)
+        //    {
         //        stream.Seek(0, SeekOrigin.Begin);
         //        using (var reader = new StreamReader(stream))
         //            bodyText = reader.ReadToEnd();

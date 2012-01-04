@@ -7,7 +7,8 @@ using Massive;
 using System.Security.Cryptography;
 using System.Data.SqlClient;
 
-namespace Web.Model {
+namespace MvcMovie.Models
+{
     public class Users:DynamicModel {
 
         public Users() : base("ApplicationConnectionString", "Users", "ID", "Email") { }

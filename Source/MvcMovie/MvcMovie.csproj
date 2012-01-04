@@ -88,6 +88,7 @@
   <ItemGroup>
     <Compile Include="App_Start\NinjectMVC3.cs" />
     <Compile Include="Controllers\ApplicationController.cs" />
+    <Compile Include="Infastructure\ExpandoObjectConverter.cs" />
     <Compile Include="Infastructure\FormsAuthTokenStore.cs" />
     <Compile Include="Controllers\HelloWorldController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -100,7 +101,6 @@
     <Compile Include="Infastructure\Logging\NLogger.cs" />
     <Compile Include="Infastructure\Massive.cs" />
     <Compile Include="Models\Movies.cs" />
-    <Compile Include="Models\MovieIntializer.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

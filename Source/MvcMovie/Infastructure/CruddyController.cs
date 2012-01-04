@@ -12,8 +12,7 @@ namespace Web.Infrastructure
 {
     public class CruddyController : ApplicationController
     {
-        //public CruddyController(ITokenHandler tokenStore) : base(tokenStore) { }
-        public CruddyController( ) : base( ) { }
+        public CruddyController(ITokenHandler tokenStore) : base(tokenStore) { } 
 
         protected dynamic _table;
          
