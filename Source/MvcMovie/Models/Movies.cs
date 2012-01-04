@@ -8,7 +8,7 @@ namespace MvcMovie.Models
     public class Movies : DynamicModel
     {
         public Movies()
-            : base("SQLSERVER_CONNECTION_STRING", "Movies", "ID")
+            : base("ApplicationConnectionString", "Movies", "ID")
         {
             //Test check-ins
         }
