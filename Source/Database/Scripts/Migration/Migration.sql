@@ -5,7 +5,6 @@ GO
  
 
 IF EXISTS ( SELECT  * FROM    sys.objects  WHERE   object_id = OBJECT_ID(N'[dbo].[Movies]')  AND type IN ( N'U' ) )  DROP TABLE [Movies] 
- 
 
 
 SET ANSI_NULLS ON
@@ -29,3 +28,4 @@ INSERT INTO  [Movies] ([Title], [Genre], [Price], [Rating]) VALUES  ('Ghostbuste
 INSERT INTO  [Movies] ([Title], [Genre], [Price], [Rating]) VALUES  ('Ghostbusters 2', 'Comedy', 2.99, 'G'  )  
 INSERT INTO  [Movies] ([Title], [Genre], [Price], [Rating]) VALUES  ('Spaceballs', 'Comedy', 7.99, 'G'  )  
   
+   

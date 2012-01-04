@@ -76,6 +76,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infastructure\CruddyController.cs" />
     <Compile Include="Infastructure\Massive.cs" />
     <Compile Include="Models\Movies.cs" />
     <Compile Include="Models\MovieIntializer.cs" />
