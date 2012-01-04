@@ -7,8 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MvcMovie.Models;
-using Massive;
-using VidPub.Web.Infrastructure;
+using Massive; 
 using Web.Infrastructure;
 
 namespace MvcMovie.Controllers
