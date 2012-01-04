@@ -7,7 +7,7 @@ using Massive;
 using System.Security.Cryptography;
 using System.Data.SqlClient;
 
-namespace MvcMovie.Models
+namespace Web.Models
 {
     public class Users:DynamicModel {
 
