@@ -9,17 +9,20 @@ using System.Web.Mvc;
 using MvcMovie.Models;
 using Massive;
 using VidPub.Web.Infrastructure;
+using Web.Infrastructure;
 
 namespace MvcMovie.Controllers
 {
     public class MoviesController : CruddyController
-    { 
+    {
 
-        public MoviesController( ) 
+        //public MoviesController(ITokenHandler tokenStore)
+        //    : base(tokenStore)
+        public MoviesController( ):base( )
         {
             _table = new Movies();
             ViewBag.Table = _table;
-        }
+        } 
 
         /*
 

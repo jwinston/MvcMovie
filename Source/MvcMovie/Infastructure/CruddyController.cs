@@ -6,18 +6,17 @@ using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using System.Dynamic;
 using System.Collections.ObjectModel;
+using Web.Controllers;
 
-namespace VidPub.Web.Infrastructure {
-    public class CruddyController : Controller // ApplicationController
+namespace Web.Infrastructure
+{
+    public class CruddyController : ApplicationController
     {
-
-       // public CruddyController(ITokenHandler tokenStore) : base(tokenStore) { }
+        //public CruddyController(ITokenHandler tokenStore) : base(tokenStore) { }
         public CruddyController( ) : base( ) { }
 
         protected dynamic _table;
-
-
-
+         
         public ViewResult Index()
         {
             IEnumerable<dynamic> items = _table.All();

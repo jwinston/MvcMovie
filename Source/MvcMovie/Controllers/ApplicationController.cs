@@ -8,9 +8,9 @@ using System.Web.Script.Serialization;
 using System.IO;
 using System.Dynamic;
 using VidPub.Web.Infrastructure.Logging;
-//using VidPub.Web.Infrastructure.Logging;
+using Web.Infrastructure; 
 
-namespace VidPub.Web.Controllers
+namespace  Web.Controllers
 {
     public class ApplicationController : Controller
     {
